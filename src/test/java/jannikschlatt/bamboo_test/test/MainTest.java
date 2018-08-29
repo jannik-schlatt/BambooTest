@@ -1,6 +1,7 @@
 package jannikschlatt.bamboo_test.test;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -15,6 +16,6 @@ public class MainTest {
     
     @Test
     public void testReturnZero() {
-	fail("Not yet implemented");
+	assertThat(myTarget.returnZero(), is(0));
     }
 }
